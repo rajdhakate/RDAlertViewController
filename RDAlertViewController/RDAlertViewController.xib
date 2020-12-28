@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RDAlertViewController" customModule="Test" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="M56-In-qhF" id="Mxw-7l-w4Z"/>
+                <outlet property="buttonsStackView" destination="VAI-ZW-SDX" id="oOJ-yR-O4Q"/>
+                <outlet property="popupWidth" destination="L00-Oj-WPb" id="uKc-yM-Bf9"/>
+                <outlet property="subtitleLabel" destination="MhA-cw-zER" id="PGj-av-GoH"/>
+                <outlet property="titleLabel" destination="73u-Od-fZq" id="yzq-cv-DH2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M56-In-qhF">
+                    <rect key="frame" x="42" y="362.5" width="330" height="181"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VAI-ZW-SDX">
+                            <rect key="frame" x="41.5" y="111" width="247.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="V2l-vL-UAl"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73u-Od-fZq">
+                            <rect key="frame" x="41.5" y="30" width="247.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="73u-Od-fZq" firstAttribute="top" secondItem="M56-In-qhF" secondAttribute="top" constant="30" id="23Q-ln-qt3"/>
+                        <constraint firstAttribute="width" constant="330" id="L00-Oj-WPb"/>
+                        <constraint firstItem="VAI-ZW-SDX" firstAttribute="centerX" secondItem="M56-In-qhF" secondAttribute="centerX" id="O2I-gX-9ko"/>
+                        <constraint firstItem="73u-Od-fZq" firstAttribute="centerX" secondItem="M56-In-qhF" secondAttribute="centerX" id="VOj-No-SEp"/>
+                        <constraint firstItem="VAI-ZW-SDX" firstAttribute="width" secondItem="73u-Od-fZq" secondAttribute="width" id="e1p-yE-cEt"/>
+                        <constraint firstItem="73u-Od-fZq" firstAttribute="width" secondItem="M56-In-qhF" secondAttribute="width" multiplier="0.75" id="lF4-KS-vv1"/>
+                        <constraint firstAttribute="bottom" secondItem="VAI-ZW-SDX" secondAttribute="bottom" constant="30" id="me2-GV-9i4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-cw-zER">
+                    <rect key="frame" x="83.5" y="423" width="247.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="M56-In-qhF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4Yf-lD-6pq"/>
+                <constraint firstItem="VAI-ZW-SDX" firstAttribute="top" secondItem="MhA-cw-zER" secondAttribute="bottom" constant="30" id="B0N-2t-wKQ"/>
+                <constraint firstItem="MhA-cw-zER" firstAttribute="centerX" secondItem="73u-Od-fZq" secondAttribute="centerX" id="JoU-Up-jhg"/>
+                <constraint firstItem="MhA-cw-zER" firstAttribute="width" secondItem="73u-Od-fZq" secondAttribute="width" id="Olk-Fk-upF"/>
+                <constraint firstItem="MhA-cw-zER" firstAttribute="top" secondItem="73u-Od-fZq" secondAttribute="bottom" constant="10" id="SVY-cf-rew"/>
+                <constraint firstItem="M56-In-qhF" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="btg-Im-Nzu"/>
+            </constraints>
+            <point key="canvasLocation" x="72" y="109"/>
+        </view>
+    </objects>
+</document>
