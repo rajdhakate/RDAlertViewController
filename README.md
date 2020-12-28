@@ -2,6 +2,9 @@
 An example of how to create or implement a custom alert view controller. 
 
 Provides completion handlers for easy control handling. Added presentation animation for better experience.
+
+![](ezgif.com-gif-maker.gif)
+
 > There are no public customization options for now. Any UI change needed to be made to the internal files.
 
 ## Usage
